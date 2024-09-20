@@ -1,0 +1,115 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>For...In Expression</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        body{
+             padding-top: 20px;
+            
+         }
+         *{
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+         }
+         .container { 
+    
+    height: 210vh;
+    width:70%;  
+    margin: auto; 
+    background: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    padding-bottom: 50px;
+    margin-top:50px ;
+    margin-bottom:50px ;
+ }
+ h1{
+     text-align: center;
+     color: brown;
+ }
+ h1, h2, h3 {  
+    color: #333;  
+}  
+
+p {  
+    line-height: 1.6;  
+}  
+
+pre {  
+    background: #eee;  
+    padding: 10px;  
+    border-radius: 5px;  
+    overflow-x: auto;  
+    white-space: pre-wrap; /* Allows wrapping of long lines */  
+}  
+
+code {  
+    font-family: 'Courier New', Courier, monospace;  
+}
+ 
+ footer{
+     background-color: rgb(10, 10, 49);
+     height: 40vh;
+     display: flex;
+     justify-content: center;
+     
+ 
+ }
+ 
+ footer h2{
+     color: blanchedalmond;
+     text-align: center;
+     padding-top: 50px;
+     font-size: 20px;
+    
+ }
+ 
+ footer h3{
+     text-align: center;
+     color: antiquewhite;
+     font-size: 15px;
+ 
+ }
+ 
+ footer h3 span{
+     color: red;
+ }
+ 
+     </style>
+</head>  
+<body>  
+    <div class="container">  
+        <h1>For...In Expression</h1>  
+        <p>By mohammed yahya  | JavaScript</p>  
+        <p>The For...In expression is used within the properties of a specific object.</p>  
+
+        <h2>The Composition</h2>  
+        <pre><code>for (variable in object)  
+{  
+    Insert code here  
+}</code></pre>  
+
+        <p>Note: Notice that the code in the for...in loop expression is shown once for each property.</p>  
+
+        <h2>Example</h2>  
+        <pre><code>var person = {fname: "Ahmed", lname: "Al-Ahmed", age: 25};  
+var x;  
+for (x in person)  
+{  
+    document.write(person[x] + " ");  
+}</code></pre>  
+    </div> 
+    <footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer> 
+</body>  
+</html>

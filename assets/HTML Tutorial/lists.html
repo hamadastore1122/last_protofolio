@@ -1,0 +1,159 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>Lists</title>
+    <style>
+        body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f4f4f4;  
+    margin: 0;  
+  
+}  
+
+.container { 
+   
+   height: 160vh;
+   width: 70%;  
+   margin: auto; 
+   background: white;  
+   padding: 20px;  
+   border-radius: 8px;  
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+   padding-bottom: 50px;
+   margin-top:50px ;
+   margin-bottom:50px ;
+}  
+
+h1, h2, h3, h4 {  
+    color: #333;  
+}  
+
+p {  
+    color: #555;  
+    line-height: 1.6;  
+}  
+
+pre {  
+    background-color: #f9f9f9;  
+    border: 1px solid #ddd;  
+    padding: 10px;  
+    overflow: auto;  
+}  
+
+code {  
+    font-family: 'Courier New', Courier, monospace;  
+}  
+
+ul, ol, dl {  
+    margin: 20px 0;  
+}  
+
+li {  
+    margin: 5px 0;  
+}  
+
+dt {  
+    font-weight: bold;  
+}  
+
+dd {  
+    margin-left: 20px;  
+}
+footer{
+    background-color: rgb(10, 10, 49);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    
+
+}
+footer h2{
+    color: blanchedalmond;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+   
+}
+footer h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+
+}
+footer h3 span{
+    color: red;
+}
+footer .footer{
+    padding-top: 200px;
+}
+
+    </style>  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Lists</h1>  
+        <h2>By mohammed yahya </h2>  
+        <p>The most popular HTML lists are the numbered list and the unnumbered (bulleted) list.</p>  
+
+        <h3>Numbered list</h3>  
+        <ol>  
+            <li>The first element</li>  
+            <li>The second element</li>  
+            <li>The third element</li>  
+        </ol>  
+
+        <h3>Unnumbered list is dotted</h3>  
+        <p>A dotted list starts with the <code>&lt;ul&gt;</code> tag and each item starts with the <code>&lt;li&gt;</code> tag and ends with <code>&lt;/li&gt;</code>. Items are identified by circles (usually small black circles).</p>  
+        <h4>Example</h4>  
+        <pre><code>&lt;ul&gt;  
+&lt;li&gt;Coffee&lt;/li&gt;  
+&lt;li&gt;Milk&lt;/li&gt;  
+&lt;/ul&gt;</code></pre>  
+        <p>The menu code will appear in the browser as follows:</p>  
+        <ul>  
+            <li>Coffee</li>  
+            <li>Milk</li>  
+        </ul>  
+
+        <h3>Numbered list</h3>  
+        <p>A numbered list starts with the <code>&lt;ol&gt;</code> tag and each item starts with the <code>&lt;li&gt;</code> tag and ends with <code>&lt;/li&gt;</code>. Items are identified by numbers.</p>  
+        <h4>Example</h4>  
+        <pre><code>&lt;ol&gt;  
+&lt;li&gt;Coffee&lt;/li&gt;  
+&lt;li&gt;Milk&lt;/li&gt;  
+&lt;/ol&gt;</code></pre>  
+        <p>The menu code will appear in the browser as follows:</p>  
+        <ol>  
+            <li>Coffee</li>  
+            <li>Milk</li>  
+        </ol>  
+
+        <h3>Identification list</h3>  
+        <p>A definition list is made up of elements and each element is defined separately. The definition list starts with the <code>&lt;dl&gt;</code> tag and each defined element starts with the <code>&lt;dt&gt;</code> tag (which identifies the element in the list) in addition to <code>&lt;dd&gt;</code> which identifies the element in the list.</p>  
+        <h4>Example</h4>  
+        <pre><code>&lt;dl dir="rtl"&gt;  
+&lt;dt&gt;Coffee&lt;/dt&gt;  
+&lt;dd&gt;Hot black drink&lt;/dd&gt;  
+&lt;dt&gt;Milk&lt;/dt&gt;  
+&lt;dd&gt;Cold white drink&lt;/dd&gt;  
+&lt;/dl&gt;</code></pre>  
+        <p>The menu code will appear in the browser as follows:</p>  
+        <dl dir="rtl">  
+            <dt>Coffee</dt>  
+            <dd>Hot black drink</dd>  
+            <dt>Milk</dt>  
+            <dd>Cold white drink</dd>  
+        </dl>  
+    </div>  
+    <footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer> 
+</body>  
+</html>

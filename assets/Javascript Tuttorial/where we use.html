@@ -1,0 +1,135 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>JavaScript Examples</title>  
+    <style>
+        body{
+            padding-top: 20px;
+           
+        }
+        *{ padding-top: 20px;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container { 
+   
+   height: 210vh;
+   width:70%;  
+   margin: auto; 
+   background: white;  
+   padding: 20px;  
+   border-radius: 8px;  
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+   padding-bottom: 50px;
+   margin-top:50px ;
+   margin-bottom:50px ;
+}
+h1{
+    text-align: center;
+    color: brown;
+}
+
+footer{
+    background-color: rgb(10, 10, 49);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+footer h2{
+    color: blanchedalmond;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+   
+}
+
+footer h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+
+}
+
+footer h3 span{
+    color: red;
+}
+
+    </style>
+</head>  
+<body>  
+    <h1>Where do we use the code?
+    </h1>
+    <div class="container">  
+        <h1>Writing code inside a web page</h1>  
+        <p>In the following example, JavaScript code will be used inside the <code>&lt;p&gt;</code> tag and the current date will be displayed inside it.</p>  
+        
+        <h2>Example</h2>  
+        <pre>  
+            <code>  
+            &lt;html&gt;  
+            &lt;body&gt;  
+            &lt;h1&gt;First JavaScript Page&lt;/h1&gt;  
+            &lt;script type="text/javascript"&gt;  
+            document.write("&lt;p&gt;" + Date() + "&lt;/p&gt;");  
+            &lt;/script&gt;  
+            &lt;/body&gt;  
+            &lt;/html&gt;  
+            </code>  
+        </pre>  
+        
+        <p><strong>Note:</strong> Try to avoid using <code>document.write()</code> function code in large JavaScript codes because the HTML page will overwrite code when using <code>document.write()</code> inside function code or when the page is loaded. However, writing <code>document.write()</code> function code is the easiest way to display the result of JavaScript code.</p>  
+        
+        <h1>Change HTML elements</h1>  
+        <p>In the following example, JavaScript code will be used inside the <code>&lt;p&gt;</code> tag by calling a specific name for it and the current date will be displayed within it.</p>  
+        
+        <h2>Example</h2>  
+        <pre>  
+            <code>  
+            &lt;html&gt;  
+            &lt;body&gt;  
+            &lt;h1&gt;First JavaScript Page&lt;/h1&gt;  
+            &lt;p id="demo"&gt;This is a paragraph.&lt;/p&gt;  
+            &lt;script type="text/javascript"&gt;  
+            document.getElementById("demo").innerHTML = Date();  
+            &lt;/script&gt;  
+            &lt;/body&gt;  
+            &lt;/html&gt;  
+            </code>  
+        </pre>  
+        
+        <p><strong>Note:</strong> JavaScript can process HTML elements as it uses the DOM method to get the element through its ID <code>getElementById()</code>, i.e., through a unique name that can be used in JavaScript just like CSS.</p>  
+        
+        <h1>Some browsers do not support JavaScript</h1>  
+        <p>If there are some browsers that do not support JavaScript, then it will cause a lot of problems.</p>  
+        
+        <p>To avoid these problems, you can use <code>&lt;!-- HTML comments --&gt;</code> to hide JavaScript code in case the browser does not support JavaScript. Just add the beginning of the comment code that starts with <code>&lt;!--</code> before writing JavaScript code and then add the end of the comment code <code>--&gt;</code> after you finish writing the JavaScript code.</p>  
+        
+        <h2>Example</h2>  
+        <pre>  
+            <code>  
+            &lt;html&gt;  
+            &lt;body&gt;  
+            &lt;script type="text/javascript"&gt;  
+            // document.getElementById("demo").innerHTML = Date();  
+            &lt;/script&gt;  
+            &lt;/body&gt;  
+            &lt;/html&gt;  
+            </code>  
+        </pre>  
+    </div> 
+    <footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer> 
+</body>  
+</html>

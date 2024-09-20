@@ -1,0 +1,151 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>SELECT DISTINCT</title>  
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f4f4f4;  
+    margin: 0;  
+}  
+
+.container { 
+   
+   height: 110vh;
+   width:70%;  
+   margin: auto; 
+   background: white;  
+   padding: 20px;  
+   border-radius: 8px;  
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+   padding-bottom: 50px;
+   margin-top:50px ;
+   margin-bottom:50px ;
+}
+h1{
+    text-align: center;
+    color: brown;
+}
+
+footer{
+    background-color: rgb(10, 10, 49);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+footer h2{
+    color: blanchedalmond;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+   
+}
+
+footer h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+
+}
+
+footer h3 span{
+    color: red;
+}
+
+footer .footer{
+    padding-top: 200px;
+}
+.text{
+    padding-top: 200px;
+    font-size: 20px;
+
+}
+.text h1{
+    padding-bottom: 20px;
+}
+    </style> 
+</head>  
+<body>  
+    <div class="container">  
+        <h1>SELECT DISTINCT</h1>  
+        <p>By Ayman Mosully</p>  
+        <p>The SELECT DISTINCT expression will be explained.</p>  
+
+        <h2>SELECT DISTINCT</h2>  
+        <p>Some columns in the table contain duplicate values, but this is not a big problem as you can only select the different values in the column by using DISTINCT, which is used to return only different values.</p>  
+        
+        <h3>The composition</h3>  
+        <pre><code>SELECT DISTINCT column_name(s) FROM table_name</code></pre>  
+
+        <h3>Example:</h3>  
+        <table>  
+            <thead>  
+                <tr>  
+                    <th>City</th>  
+                    <th>Address</th>  
+                    <th>FirstName</th>  
+                    <th>LastName</th>  
+                    <th>P_Id</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>Sandnes</td>  
+                    <td>Timoteivn 10</td>  
+                    <td>Ola</td>  
+                    <td>Hansen</td>  
+                    <td>1</td>  
+                </tr>  
+                <tr>  
+                    <td>Sandnes</td>  
+                    <td>Borgyn 23</td>  
+                    <td>Tove</td>  
+                    <td>Svensdon</td>  
+                    <td>2</td>  
+                </tr>  
+                <tr>  
+                    <td>Stavanger</td>  
+                    <td>20th of July</td>  
+                    <td>Kari</td>  
+                    <td>Pettersen</td>  
+                    <td>3</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+
+        <p>Now the different values from the City column will be selected through the SELECT DISTINCT expression:</p>  
+        <pre><code>SELECT DISTINCT City FROM Persons</code></pre>  
+        
+        <p>The result will appear as follows:</p>  
+        <table>  
+            <thead>  
+                <tr>  
+                    <th>City</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>Sandnes</td>  
+                </tr>  
+                <tr>  
+                    <td>Stavanger</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>  
+    
+ <footer>
+    <div class="footer">
+        <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+    <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+    </div>
+
+</footer>
+</body>  
+</html>

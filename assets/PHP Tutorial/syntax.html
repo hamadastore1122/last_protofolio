@@ -1,0 +1,136 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>Configuration</title> 
+    <style>
+        body{
+             padding-top: 20px;
+            
+         }
+         *{
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+         }
+         .container { 
+    
+    height: 210vh;
+    width:70%;  
+    margin: auto; 
+    background: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    padding-bottom: 50px;
+    margin-top:50px ;
+    margin-bottom:50px ;
+ }
+ h1{
+     text-align: center;
+     color: brown;
+ }
+ h1, h2, h3 {  
+    color: #333;  
+}  
+
+p {  
+    line-height: 1.6;  
+}  
+
+pre {  
+    background: #eee;  
+    padding: 10px;  
+    border-radius: 5px;  
+    overflow-x: auto;  
+    white-space: pre-wrap; /* Allows wrapping of long lines */  
+}  
+
+code {  
+    font-family: 'Courier New', Courier, monospace;  
+}
+ 
+ footer{
+     background-color: rgb(10, 10, 49);
+     height: 40vh;
+     display: flex;
+     justify-content: center;
+     
+ 
+ }
+ 
+ footer h2{
+     color: blanchedalmond;
+     text-align: center;
+     padding-top: 50px;
+     font-size: 20px;
+    
+ }
+ 
+ footer h3{
+     text-align: center;
+     color: antiquewhite;
+     font-size: 15px;
+ 
+ }
+ 
+ footer h3 span{
+     color: red;
+ }
+ 
+     </style>
+ 
+</head>  
+<body>  
+    <h1>syntax</h1>  
+    <div class="container">  
+       
+        <p>By mohammed yahya </p>  
+        <p>PHP codes run on the server and the result appears on the browser in the form of HTML texts.</p>  
+
+        <h2>Main Configuration</h2>  
+        <p>PHP codes always start with the <code>&lt;?php</code> tag and end with <code>?&gt;</code>. You can also insert PHP codes anywhere you want on your web page.</p>  
+        <p>Some servers that have shortcuts for PHP codes can start with the <code>&lt;?</code> tag and end with <code>?&gt;</code>. However, we strongly recommend using the official code tag to avoid server problems, which is <code>&lt;?php</code>.</p>  
+        
+        <pre><code>&lt;?php  
+?&gt;</code></pre>  
+        
+        <p>A PHP file contains HTML tags just like HTML pages but also contains special PHP code.</p>  
+        <p>An example of a web page containing simple PHP code and the text "Welcome" that will appear in the browser:</p>  
+        
+        <pre><code>&lt;html&gt;  
+&lt;body&gt;  
+&lt;?php  
+echo "Welcome";  
+?&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre>  
+        
+        <p>At the end of each PHP code, there must be a semicolon; this semicolon is the mark that separates the codes for easy reading.</p>  
+        <p>The code can be displayed in the browser through expressions used in PHP such as <code>echo</code> and <code>print</code>.</p>  
+        <p><strong>Note:</strong> The file must be PHP and its extension is .php. If the PHP code is in .html pages, the code will not work.</p>  
+
+        <h2>Comments and Notes in PHP</h2>  
+        <p>In PHP we use <code>//</code> for in-line comments and we can also use <code>/*</code> and <code>*/</code> for multi-line comments just like in JavaScript.</p>  
+        
+        <pre><code>&lt;html&gt;  
+&lt;body&gt;  
+&lt;?php  
+// one line comment  
+/* Comment with more than  
+line */  
+?&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre>  
+    </div>  
+    <footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer>
+</body>  
+</html>

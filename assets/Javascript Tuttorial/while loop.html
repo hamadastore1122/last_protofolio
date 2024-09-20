@@ -1,0 +1,145 @@
+<!DOCTYPE html>  
+<html lang="ar">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>While Loop</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        body{
+             padding-top: 20px;
+            
+         }
+         *{
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+         }
+         .container { 
+    
+    height: 210vh;
+    width:70%;  
+    margin: auto; 
+    background: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    padding-bottom: 50px;
+    margin-top:50px ;
+    margin-bottom:50px ;
+ }
+ h1{
+     text-align: center;
+     color: brown;
+ }
+ h1, h2, h3 {  
+    color: #333;  
+}  
+
+p {  
+    line-height: 1.6;  
+}  
+
+pre {  
+    background: #eee;  
+    padding: 10px;  
+    border-radius: 5px;  
+    overflow-x: auto;  
+    white-space: pre-wrap; /* Allows wrapping of long lines */  
+}  
+
+code {  
+    font-family: 'Courier New', Courier, monospace;  
+}
+ 
+ footer{
+     background-color: rgb(10, 10, 49);
+     height: 40vh;
+     display: flex;
+     justify-content: center;
+     
+ 
+ }
+ 
+ footer h2{
+     color: blanchedalmond;
+     text-align: center;
+     padding-top: 50px;
+     font-size: 20px;
+    
+ }
+ 
+ footer h3{
+     text-align: center;
+     color: antiquewhite;
+     font-size: 15px;
+ 
+ }
+ 
+ footer h3 span{
+     color: red;
+ }
+ 
+     </style>
+</head>  
+<body>  
+    <div class="container">  
+        <h1>While Loop</h1>  
+        <p>By Ayman Mosully | JavaScript</p>  
+        <p>Loops are used using while statements by using a set of codes when a certain condition is met.</p>  
+
+        <h2>The composition</h2>  
+        <pre><code>while (variable &lt;= endvalue) {  
+    // Code here  
+}</code></pre>  
+
+        <p><strong>Note:</strong> You can use any type of comparison from the greater and lesser signs and others that were explained in previous lessons.</p>  
+
+        <h2>Example</h2>  
+        <p>In the following example, a loop will be defined starting from i=0 and the code will continue to run as long as the variable i is less than or equal to 5 and will be incremented by one number 1 each time the loop is repeated.</p>  
+        <pre><code>&lt;html&gt;  
+&lt;body&gt;  
+&lt;script type="text/javascript"&gt;  
+var i = 0;  
+while (i &lt;= 5) {  
+    document.write("The number is " + i);  
+    document.write("&lt;br /&gt;");  
+    i++;  
+}  
+&lt;/script&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre>  
+
+        <h2>Loops using do...while</h2>  
+        <p>do...while is a type of while loop and is used to display a set of codes once and then the loop is repeated as long as the specified condition is true.</p>  
+
+        <h2>The composition</h2>  
+        <pre><code>do {  
+    // Code to be displayed  
+} while (variable &lt;= endvalue);</code></pre>  
+
+        <h2>Example</h2>  
+        <p>In the following example, a do...while loop will be used and the code will be shown once even if the condition is false because the expression was created before the condition was checked.</p>  
+        <pre><code>&lt;html&gt;  
+&lt;body&gt;  
+&lt;script type="text/javascript"&gt;  
+var i = 0;  
+do {  
+    document.write("The number is " + i);  
+    document.write("&lt;br /&gt;");  
+    i++;  
+} while (i &lt;= 10);  
+&lt;/script&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre>  
+    </div>  
+    
+ <footer>
+    <div class="footer">
+        <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+    <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+    </div>
+
+</footer>
+</body>  
+</html>

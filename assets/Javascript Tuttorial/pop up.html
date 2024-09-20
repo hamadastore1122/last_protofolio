@@ -1,0 +1,160 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>JavaScript Popup Boxes</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        body{
+             padding-top: 20px;
+            
+         }
+         *{
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+         }
+         .container { 
+    
+    height: 210vh;
+    width:70%;  
+    margin: auto; 
+    background: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    padding-bottom: 50px;
+    margin-top:50px ;
+    margin-bottom:50px ;
+ }
+ h1, h2, h3 {  
+    color: #333;  
+}  
+
+p {  
+    line-height: 1.6;  
+}  
+
+pre {  
+    background: #eee;  
+    padding: 10px;  
+    border-radius: 5px;  
+    overflow-x: auto;  
+    white-space: pre-wrap; /* Allows wrapping of long lines */  
+}  
+
+code {  
+    font-family: 'Courier New', Courier, monospace;  
+}
+ h1{
+     text-align: center;
+     color: brown;
+ }
+ 
+ footer{
+     background-color: rgb(10, 10, 49);
+     height: 40vh;
+     display: flex;
+     justify-content: center;
+     
+ 
+ }
+ 
+ footer h2{
+     color: blanchedalmond;
+     text-align: center;
+     padding-top: 50px;
+     font-size: 20px;
+    
+ }
+ 
+ footer h3{
+     text-align: center;
+     color: antiquewhite;
+     font-size: 15px;
+ 
+ }
+ 
+ footer h3 span{
+     color: red;
+ }
+ 
+     </style>
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Popup Boxes</h1>  
+        <p>By Ayman Mosully | JavaScript</p>  
+
+        <h2>Alert Box</h2>  
+        <p>The alert box is used to inform you if there is something important for the user.</p>  
+        <pre><code>alert("Message: This is an alert box.");</code></pre>  
+        
+        <h3>Example</h3>  
+        <pre><code>&lt;html&gt;  
+&lt;head&gt;  
+&lt;script type="text/javascript"&gt;  
+function show_alert() {  
+    alert("Message: This is an alert box.");  
+}  
+&lt;/script&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;input type="button" onclick="show_alert()" value="Click here to show alert" /&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre>  
+
+        <h2>Confirm Box</h2>  
+        <p>Used for confirmation dialogs when you want to confirm something specific.</p>  
+        <pre><code>confirm("Are you sure?");</code></pre>  
+        
+        <h3>Example</h3>  
+        <pre><code>&lt;html&gt;  
+&lt;head&gt;  
+&lt;script type="text/javascript"&gt;  
+function show_confirm() {  
+    var r = confirm("Are you sure?");  
+    if (r == true) {  
+        alert("You pressed 'OK'");  
+    } else {  
+        alert("You pressed 'Cancel'");  
+    }  
+}  
+&lt;/script&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;input type="button" onclick="show_confirm()" value="Click here for confirmation" /&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre>  
+
+        <h2>Prompt Box</h2>  
+        <p>Used to get a specific value from the user before entering the page.</p>  
+        <pre><code>prompt("Please enter your name:");</code></pre>  
+        
+        <h3>Example</h3>  
+        <pre><code>&lt;html&gt;  
+&lt;head&gt;  
+&lt;script type="text/javascript"&gt;  
+function show_prompt() {  
+    var name = prompt("Please enter your name:");  
+    if (name != null) {  
+        document.write("Hello " + name + "!");  
+    }  
+}  
+&lt;/script&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;input type="button" onclick="show_prompt()" value="Click here to enter name" /&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre>  
+    </div>
+    <footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer>  
+</body>  
+</html>

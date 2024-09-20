@@ -1,0 +1,144 @@
+<!DOCTYPE html>  
+<html lang="ar">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Switch Expression</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        body{
+             padding-top: 20px;
+            
+         }
+         *{
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+         }
+         .container { 
+    
+    height: 210vh;
+    width:70%;  
+    margin: auto; 
+    background: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    padding-bottom: 50px;
+    margin-top:50px ;
+    margin-bottom:50px ;
+ }
+ h1, h2, h3 {  
+    color: #333;  
+}  
+
+p {  
+    line-height: 1.6;  
+}  
+
+pre {  
+    background: #eee;  
+    padding: 10px;  
+    border-radius: 5px;  
+    overflow-x: auto;  
+    white-space: pre-wrap; /* Allows wrapping of long lines */  
+}  
+
+code {  
+    font-family: 'Courier New', Courier, monospace;  
+} 
+ h1{
+     text-align: center;
+     color: brown;
+ }
+ 
+ footer{
+     background-color: rgb(10, 10, 49);
+     height: 40vh;
+     display: flex;
+     justify-content: center;
+     
+ 
+ }
+ 
+ footer h2{
+     color: blanchedalmond;
+     text-align: center;
+     padding-top: 50px;
+     font-size: 20px;
+    
+ }
+ 
+ footer h3{
+     text-align: center;
+     color: antiquewhite;
+     font-size: 15px;
+ 
+ }
+ 
+ footer h3 span{
+     color: red;
+ }
+ 
+     </style>
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Switch Expression</h1>  
+        <p>By Ayman Mosully | JavaScript</p>  
+        <p>Conditional expressions are used to create different commands based on different conditions.</p>  
+
+        <h2>Switch Expression in JavaScript</h2>  
+        <p>The switch expression is used to select a code from a set of codes.</p>  
+
+        <h3>The Composition</h3>  
+        <pre><code>switch(n) {  
+    case 1:  
+        Insert code set 1;  
+        break;  
+    case 2:  
+        Insert code set 2;  
+        break;  
+    default:  
+        Show the code if the result does not match cases 1 and 2;  
+}</code></pre>  
+
+        <h2>How does the code work?</h2>  
+        <p>First, when using the switch expression, you must specify a specific expression between parentheses. It is usually a variable and is evaluated once. Then the value of the expression to be compared is compared with the other values in each case.</p>  
+        <p>If there is a match with the code, it will be displayed immediately and the code will stop checking. You can also use break after each case to avoid the check passing to the other case automatically.</p>  
+
+        <h3>Example</h3>  
+        <pre><code>&lt;script type="text/javascript"&gt;  
+/*  
+You will receive different greetings depending on what day it is today.  
+*/  
+var d = new Date();  
+var theDay = d.getDay();  
+
+switch (theDay) {  
+    case 5:  
+        document.write("Finally Friday");  
+        break;  
+    case 6:  
+        document.write("Saturday is the start of the work day");  
+        break;  
+    case 0:  
+        document.write("Sunday is another day of work");  
+        break;  
+    default:  
+        document.write("I am waiting for the holiday");  
+}  
+&lt;/script&gt;</code></pre>  
+
+        <p><strong>Note:</strong> We use the default case when the conditions are not met in each of the previous cases to display a separate message, exactly as else works.</p>  
+    </div> 
+    
+ <footer>
+    <div class="footer">
+        <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+    <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+    </div>
+
+</footer> 
+</body>  
+</html>

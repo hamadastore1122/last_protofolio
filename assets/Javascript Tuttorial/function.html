@@ -1,0 +1,153 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>JavaScript Functions</title>  
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+             padding-top: 20px;
+            
+         }
+         *{
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+         }
+         .container { 
+    
+    height: 210vh;
+    width:70%;  
+    margin: auto; 
+    background: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    padding-bottom: 50px;
+    margin-top:50px ;
+    margin-bottom:50px ;
+ }
+ h1{
+     text-align: center;
+     color: brown;
+ }
+ h1, h2, h3 {  
+    color: #333;  
+}  
+
+p {  
+    line-height: 1.6;  
+}  
+
+pre {  
+    background: #eee;  
+    padding: 10px;  
+    border-radius: 5px;  
+    overflow-x: auto;  
+    white-space: pre-wrap; /* Allows wrapping of long lines */  
+}  
+
+code {  
+    font-family: 'Courier New', Courier, monospace;  
+}
+ 
+ footer{
+     background-color: rgb(10, 10, 49);
+     height: 40vh;
+     display: flex;
+     justify-content: center;
+     
+ 
+ }
+ 
+ footer h2{
+     color: blanchedalmond;
+     text-align: center;
+     padding-top: 50px;
+     font-size: 20px;
+    
+ }
+ 
+ footer h3{
+     text-align: center;
+     color: antiquewhite;
+     font-size: 15px;
+ 
+ }
+ 
+ footer h3 span{
+     color: red;
+ }
+ 
+     </style>  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Functions</h1>  
+        <p>By Ayman Mosully | JavaScript</p>  
+        <p>Function code can be called upon a specific event or when the function code is called.</p>  
+
+        <h2>JavaScript Jobs</h2>  
+        <p>To avoid displaying codes in the browser when the page loads, you can put the code within a function code.</p>  
+        <p>The function code that will appear in the browser through a specific event or through a call to the code. You can also call the code from anywhere in the web page or from another page where the code is located in a special JavaScript file with the extension .js.</p>  
+
+        <h2>How can a job code be defined?</h2>  
+        <h3>The composition</h3>  
+        <p>Functional code can be used by first writing the word <code>function</code>, then the name of the function, then if we want to insert variables, we must put them between brackets, and finally between the curved brackets we put the code that we want to use.</p>  
+        <pre><code>function functionName(var1, var2, ..., varN) {  
+    // Code here  
+}</code></pre>  
+        <p>The parameters <code>var1</code>, <code>var2</code>, etc. are variables or values that are passed to the function code.</p>  
+        <p><strong>Note:</strong> When not using any parameters, you must use brackets <code>()</code> after the function code name.</p>  
+
+        <h3>Example</h3>  
+        <pre><code>&lt;html&gt;  
+&lt;head&gt;  
+&lt;script type="text/javascript"&gt;  
+function displayMessage() {  
+    alert("Welcome to the Arab Programming Institute!");  
+}  
+&lt;/script&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;form&gt;  
+    &lt;input type="button" value="Click here" onclick="displayMessage()" /&gt;  
+&lt;/form&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre>  
+
+        <h2>Return Status</h2>  
+        <p>The <code>return</code> condition is used to specify a value that can be returned from the function code.</p>  
+        <p>The following example shows the return of a value through two different numbers in <code>a</code> and <code>b</code>.</p>  
+
+        <h3>Example</h3>  
+        <pre><code>&lt;html&gt;  
+&lt;head&gt;  
+&lt;script type="text/javascript"&gt;  
+function product(a, b) {  
+    return a * b;  
+}  
+&lt;/script&gt;  
+&lt;/head&gt;  
+&lt;body&gt;  
+&lt;script type="text/javascript"&gt;  
+document.write(product(8, 3));  
+&lt;/script&gt;  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre>  
+
+        <h2>Lifetime of Variables in JavaScript</h2>  
+        <p>If you use a variable using or within a function, the variable will only be used within the function and will be ignored outside the function. These variables are called local variables.</p>  
+        <p>If you use a variable outside the function, all code can use it and the variable's lifetime starts when it is created and ends when the page is closed.</p>  
+    </div>
+    <footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer>
+  
+</body>  
+</html>

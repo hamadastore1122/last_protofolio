@@ -1,0 +1,146 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>PHP Language: Variables</title>  
+    <style>
+        body{
+             padding-top: 20px;
+            
+         }
+         *{
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+         }
+         .container { 
+    
+    height: 210vh;
+    width:70%;  
+    margin: auto; 
+    background: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    padding-bottom: 50px;
+    margin-top:50px ;
+    margin-bottom:50px ;
+ }
+ h1 {  
+    color: #333;  
+    text-align: center;  
+    padding-bottom: 10px;  
+}  
+
+h2 {  
+    color: #f39c12;  
+}  
+
+p {  
+    line-height: 1.6;  
+}  
+
+code {  
+    background: #eaeaea;  
+    padding: 2px 4px;  
+    border-radius: 4px;  
+}  
+
+pre {  
+    background: #eaeaea;  
+    padding: 10px;  
+    border-radius: 4px;  
+    overflow-x: auto;  
+} 
+ h1{
+     text-align: center;
+     color: brown;
+ }
+ h1, h2, h3 {  
+    color: #333;  
+}  
+
+p {  
+    line-height: 1.6;  
+}  
+
+pre {  
+    background: #eee;  
+    padding: 10px;  
+    border-radius: 5px;  
+    overflow-x: auto;  
+    white-space: pre-wrap; /* Allows wrapping of long lines */  
+}  
+
+code {  
+    font-family: 'Courier New', Courier, monospace;  
+}
+ 
+ footer{
+     background-color: rgb(10, 10, 49);
+     height: 40vh;
+     display: flex;
+     justify-content: center;
+     
+ 
+ }
+ 
+ footer h2{
+     color: blanchedalmond;
+     text-align: center;
+     padding-top: 50px;
+     font-size: 20px;
+    
+ }
+ 
+ footer h3{
+     text-align: center;
+     color: antiquewhite;
+     font-size: 15px;
+ 
+ }
+ 
+ footer h3 span{
+     color: red;
+ }
+ 
+     </style>
+
+</head>  
+<body>  
+    <div class="container">  
+        <h1>PHP Language: Variables</h1>  
+        <p>By mohammed yahya </p>  
+        <p>A variable is used to store information.</p>  
+
+        <h2>Variables in PHP</h2>  
+        <p>Variables are used to store values such as strings, numbers, and arrays. Once created, a variable can be used anywhere and multiple times in a web page. All PHP variables start with <code>$</code>.</p>  
+        <p>The best and most correct way to create a variable is as follows:</p>  
+        <pre><code>$var_name = value;</code></pre>  
+        <p>Some new programmers forget to put <code>$</code> sign before the variable name and then the code will not work.</p>  
+        <p>Now we will create two variables, one contains text and the other contains a number.</p>  
+        <pre><code>&lt;?php  
+$text = "Hello World!";  
+$x = 16;  
+?&gt;</code></pre>  
+
+        <h2>PHP is lax</h2>  
+        <p>Using PHP you don’t need to declare the variable before adding the value to it. In the previous example you don’t need to define the variable whether the data type is text, numbers, or other, because PHP automatically determines the data type of the variable once you use the value attached to the variable.</p>  
+        <p>In strict programming languages you must determine the type of the variable before adding data to it, while PHP is considered a tolerant and lenient language, meaning the type of the variable is determined when the value is added to it.</p>  
+
+        <h2>Rules for choosing a variable name</h2>  
+        <p>The variable name must start with a lowercase letter or an underscore (_).</p>  
+        <p>The variable name must contain lowercase letters or numbers (a-z, A-Z, 0-9, _).</p>  
+        <p>The variable name must not contain spaces between names and words can be separated using <code>_</code> (e.g., <code>my_string</code>) or by capitalizing the first letter of each word (e.g., <code>myString</code>).</p>  
+    </div>
+    <footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer>  
+</body>  
+</html>

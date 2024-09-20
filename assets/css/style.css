@@ -7,7 +7,8 @@
 }
 
 #section1{
-    background-image: url(/assets/image/slide-01.jpg);
+    background-image: url(/assets/image/pex4.jpg);
+  
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -22,12 +23,12 @@
    
 }
 #section1 .text h2{
-    color: #dae5f0;
+    color: #ef1111;
     font-size: 3em;
     padding-bottom: 20px;
 }
 #section1 .text h2 span{
-    color: red;
+    color: rgb(20, 20, 20);
     border-bottom: 2px solid rgb(239, 218, 218);
 }
 
@@ -86,8 +87,7 @@
 .container .main-nav li  :hover{
     color: brown;
 }
-.container .row .main-nav{
-}
+
 .container .row .nav{
     display: flex;
     justify-content: right;
@@ -115,7 +115,8 @@
     font-size: 4em;
 }
 .cards{
-    background-color: #dae5f0;
+    /* background-color: #dae5f0; */
+    /* background-image: url(/assets/image/pex1.jpg); */
     height: 150vh;
     text-align: center;
     background-repeat: no-repeat;
@@ -168,7 +169,7 @@
     display: flex;
     justify-content: center;
     padding-top: 400px;
-    background-image: url(/assets/image/slide-03.jpg);
+    /* background-image: url(/assets/image/pex3.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -180,7 +181,7 @@
     font-size: 4em;
 }
 #section2 p{
-    color: rgb(239, 235, 243);
+    color: rgb(16, 16, 17);
 }
 #section2 span{
     color: rgb(204, 126, 233);

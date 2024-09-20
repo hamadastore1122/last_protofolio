@@ -1,0 +1,177 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>CSS Backgrounds</title>  
+    <style>
+        body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f9f9f9;  
+    margin: 0;  
+ 
+}  
+
+.container { 
+   
+   height: 260vh;
+   width: 70%;  
+   margin: auto; 
+   background: white;  
+   padding: 20px;  
+   border-radius: 8px;  
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+   padding-bottom: 50px;
+   margin-top:50px ;
+   margin-bottom:50px ;
+}   
+footer{
+    background-color: rgb(10, 10, 49);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    
+
+}
+footer h2{
+    color: blanchedalmond;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+   
+}
+footer h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+
+}
+footer h3 span{
+    color: red;
+}
+footer .footer{
+    padding-top: 200px;
+}
+h1, h2 {  
+    color: #333;  
+}  
+
+p {  
+    color: #555;  
+    line-height: 1.6;  
+}  
+
+pre {  
+    background-color: #f0f0f0;  
+    border-left: 5px solid orange;  
+    padding: 10px;  
+    margin: 20px 0;  
+}  
+
+ul {  
+    margin: 20px 0;  
+    padding-left: 20px;  
+}
+    </style>
+</head>  
+<body>  
+    <div class="container">  
+        <h1>CSS Backgrounds</h1>  
+        <p>By mohammed yahya</p>  
+        <p>Background properties are used to apply certain effects to the background of the design in general.</p>  
+
+        <h2>Background Color</h2>  
+        <p>The <code>background-color</code> property is used to specify the background color of a specific element in a web page. The background color of a web page is specified by applying the background color to the body selector.</p>  
+        <pre>  
+body {background-color: #bec4de;}  
+        </pre>  
+        <p>There are 3 types of color customization using CSS as follows:</p>  
+        <ul>  
+            <li>"#FFFFFF" Using a HEX value example</li>  
+            <li>"rgb(255,0,0)" Using RGB value example</li>  
+            <li>Using the color name like "Red"</li>  
+        </ul>  
+        <p>In this example, it is shown that the <code>h1</code>, <code>p</code>, <code>div</code> tags have different background colors:</p>  
+        <pre>  
+h1 {background-color:#6495ed;}  
+p {background-color:#ffffff;}  
+div {background-color:#bec4de;}  
+        </pre>  
+
+        <h2>Background Image</h2>  
+        <p>The <code>background-image</code> property is used to specify an image as the background for a specific element. The image is repeated by default until it covers the element it is entered into.</p>  
+        <p>The background image of the web page is specified as in the following example:</p>  
+        <pre>  
+body {background-image: url('smile.jpg');}  
+        </pre>  
+
+        <h2>Repeat Background Image – Horizontal or Vertical</h2>  
+        <p>According to the default settings, the image will be repeated on both the horizontal and vertical sides.</p>  
+        <p>You must choose the image and location well and determine whether it should be repeated horizontally, vertically, or without repeating, according to the design and location of your element.</p>  
+        <p>If you want to repeat the image horizontally, then you can use the value <code>repeat-x</code> and the background will become as in the following example:</p>  
+        <pre>  
+body {  
+    background-image: url('smile.jpg');  
+    background-repeat: repeat-x;  
+}  
+        </pre>
+        <h1>Background Image – Repeat Vertically</h1>  
+        <p>If you want to repeat the image vertically, then you can use the <code>repeat-y</code> value and the background will become as in the following example:</p>  
+        <pre>  
+body {  
+    background-image: url('smile.jpg');  
+    background-repeat: repeat-y;  
+}  
+        </pre>  
+
+        <h2>Background Image – Set Position and No Repeat</h2>  
+        <p>When using an image as a background for the site, use an image that does not hide the text written underneath it. The image can be shown in the background once through the <code>background-repeat</code> property:</p>  
+        <pre>  
+body {  
+    background-image: url('smile.jpg');  
+    background-repeat: no-repeat;  
+}  
+        </pre>  
+
+        <p>The image can hide the text or not show it clearly, so we can modify the position of the image. Here we can use the <code>background-position</code> property:</p>  
+        <pre>  
+body {  
+    background-image: url('smile.jpg');  
+    background-repeat: no-repeat;  
+    background-position: right top;  
+}  
+        </pre>  
+
+        <h2>Background Property Abbreviation</h2>  
+        <p>Note from the previous examples that there are many properties that deal with the background. The code can be abbreviated and collected in one property instead of placing all the properties:</p>  
+        <pre>  
+body {  
+    background: #ffffff url('smile.jpg') no-repeat right top;  
+}  
+        </pre>  
+
+        <h2>Property Order</h2>  
+        <p>As you can see, we can collect all the properties into one property, but you must pay attention that the values must be arranged as follows:</p>  
+        <ul>  
+            <li>background-color</li>  
+            <li>background-image</li>  
+            <li>background-repeat</li>  
+            <li>background-attachment</li>  
+            <li>background-position</li>  
+        </ul>  
+        <p>It doesn't matter if one of the values is missing, but the important thing is to keep their order exactly as I mentioned.</p> 
+    </div>
+
+    
+    <footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer>   
+
+
+</body>  
+</html>

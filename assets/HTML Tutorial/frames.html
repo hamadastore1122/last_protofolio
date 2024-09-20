@@ -1,0 +1,130 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>Frames</title>  
+    <style>
+        body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f4f4f4;  
+    margin: 0;  
+    padding: 20px;  
+}  
+
+.container {  
+    max-width: 70%;  
+    margin: auto;  
+    background: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}  
+
+h1, h2 {  
+    color: #333;  
+}  
+
+p {  
+    color: #555;  
+    line-height: 1.6;  
+}  
+
+.warning {  
+    color: red;  
+    font-weight: bold;  
+}  
+
+pre {  
+    background-color: #f9f9f9;  
+    border: 1px solid #ddd;  
+    padding: 10px;  
+    overflow: auto;  
+}  
+
+code {  
+    font-family: 'Courier New', Courier, monospace;  
+}  
+
+ul {  
+    margin: 20px 0;  
+    padding-left: 20px;  
+}  
+
+li {  
+    margin: 5px 0;  
+}
+footer{
+    background-color: rgb(10, 10, 49);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    
+
+}
+footer h2{
+    color: blanchedalmond;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+   
+}
+footer h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+
+}
+footer h3 span{
+    color: red;
+}
+footer .footer{
+    padding-top: 200px;
+}
+
+    </style>
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Frames</h1>  
+        <p>By mohammed yahya  | HTML</p>  
+        <p>By using frames you can display more than one page of your site in the same browser window.</p>  
+        <p class="warning">Warning: Do not expect to continue to support frames in the future of HTML.</p>  
+
+        <h2>Frames</h2>  
+        <p>By using frames you can display more than one HTML page in the same browser window. Each HTML page is called a "frame" and each frame is independent of the others.</p>  
+        <ul>  
+            <li>The disadvantages of using frames are:</li>  
+            <li>Frames are not expected to be supported with HTML standalone.</li>  
+            <li>Frames are difficult to use (especially if you print every page).</li>  
+            <li>Web developers must keep track of each HTML page individually.</li>  
+        </ul>  
+
+        <h2>Frameset Elements</h2>  
+        <p>The main frame elements hold one or more frames, and each frame can hold an independent web page. The main frameset elements specify how many columns or rows will be in the main frame and how tall or wide each page will be displayed in pixels.</p>  
+
+        <h2>Tire Elements</h2>  
+        <p>The <code>&lt;frame&gt;</code> tag defines a frame page within the main frame. In the following example, we have a main frame with two columns.</p>  
+        <pre><code>&lt;frameset cols="25%,75%"&gt;  
+    &lt;frame src="frame_a.html" /&gt;  
+    &lt;frame src="frame_b.html" /&gt;  
+&lt;/frameset&gt;</code></pre>  
+        <p>Note: The width of the frame columns can be adjusted using pixels, such as <code>(cols="200,500")</code>, and one of the columns can be adjusted by the remaining space by placing an asterisk <code>(cols="25%,*")</code>.</p>  
+
+        <h2>Some Important Tips</h2>  
+        <ul>  
+            <li>If the frame borders are visible, the user can resize the frame by dragging the borders. To avoid resizing the frame and make the borders fixed, the <code>noresize</code> extension can be used for the <code>&lt;frame&gt;</code> tag, i.e., <code>noresize="norezise"</code>.</li>  
+            <li>Add <code>&lt;noframes&gt;</code> tag for browsers that do not support frames.</li>  
+            <li>The body tags <code>&lt;body&gt;</code> cannot be used together when using <code>&lt;frameset&gt;</code> tags. However, if you add the <code>&lt;noframes&gt;</code> tag and it contains elements such as text specific to browsers that do not support frames, then the <code>&lt;body&gt;</code> tags must be closed.</li>  
+        </ul>  
+    </div>
+    <footer></footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer>  
+</body>  
+</html>

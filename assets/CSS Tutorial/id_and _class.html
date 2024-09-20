@@ -1,0 +1,145 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>Using ID and Class</title>  
+    <style>
+        body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f9f9f9;  
+    margin: 0;  
+   
+}  
+
+.container { 
+   
+   height: 140vh;
+   width: 70%;  
+   margin: auto; 
+   background: white;  
+   padding: 20px;  
+   border-radius: 8px;  
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+   padding-bottom: 50px;
+   margin-top:50px ;
+   margin-bottom:50px ;
+}   
+footer{
+    background-color: rgb(10, 10, 49);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    
+
+}
+footer h2{
+    color: blanchedalmond;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+   
+}
+footer h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+
+}
+footer h3 span{
+    color: red;
+}
+footer .footer{
+    padding-top: 200px;
+}
+
+h1, h2 {  
+    color: #333;  
+}  
+
+p {  
+    color: #555;  
+    line-height: 1.6;  
+}  
+
+.code-example {  
+    background-color: #f0f0f0;  
+    border-left: 5px solid orange;  
+    padding: 10px;  
+    margin: 20px 0;  
+}
+    </style>
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Using ID and Class</h1>  
+        <p>By mohammed yahya </p>  
+        <h2>Call a Special Class or ID</h2>  
+        <p>In the previous lesson, we talked about how we can use the (selector), which is an HTML tag, to make a complete modification to that tag or selector in all HTML pages. See this example:</p>  
+        <div class="code-example">  
+            <pre>  
+h1 { color: red; text-align: center; }  
+            </pre>  
+        </div>  
+        <p>This example means that every large heading tag defined by the h1 tag in the web page will be colored red and centered. But what if I have 5 large headings in the web page, this design will be applied to them. What should I do to make 4 headings red and one blue?</p>  
+        <p>Using CSS, you can apply a specific design to a specific tag in the web page by using the class and id calling properties. These two properties enable you to call a specific design with a unique name that you have chosen:</p>  
+        <div class="code-example">  
+            <pre>  
+h1 { color: red; }  
+.heading { color: blue; }  
+            </pre>  
+        </div>  
+        <p>In this example, we mean that all the headings in the web page that have the h1 tag will be red, while the others will be blue. Although heading is not a tag, it is a unique name that I can call with any tag I want, and it must be called through HTML tags as follows:</p>  
+        <div class="code-example">  
+            <pre>  
+<h1 class="heading">This is a blue title</h1>  
+<p class="heading">This is a blue paragraph</p>  
+            </pre>  
+        </div>  
+        <p>But the question is which is better, class or id, and when can they be used?</p>  
+
+        <h2>Use ID</h2>  
+        <p>The id can be used to apply a specific design to a unique HTML tag. The id is used with only one tag. You must add "#" to the name you want to apply the design to and call it through the id extension in the HTML tag.</p>  
+        <div class="code-example">  
+            <pre>  
+#para1 {  
+    text-align: center;  
+    color: red;  
+}  
+            </pre>  
+        </div>  
+        <p><strong>Note:</strong> When calling the name as a suffix in the tag, just add the name and do not add "#" to the value.</p>  
+        <div class="code-example">  
+            <pre>  
+<h1 id="para1">This is a heading</h1>  
+            </pre>  
+        </div>  
+        <p>Do not start the name when using id with a number because it will not work on Mozilla/Firefox browser.</p>  
+
+        <h2>Use Class</h2>  
+        <p>A class can be used to apply to a tag or a group of tags, unlike id which can be applied to only one tag. A class allows you to use a specific style and apply it as many times as needed.</p>  
+        <p>You must add a dot "." to the name you want to apply the design to and call it through the class extension in the HTML tag.</p>  
+        <div class="code-example">  
+            <pre>  
+.center { text-align: center; }  
+            </pre>  
+        </div>  
+        <p>In the following example, all elements that use the name and the class="center" extension will be center aligned:</p>  
+        <div class="code-example">  
+            <pre>  
+p.center { text-align: center; }  
+            </pre>  
+        </div>  
+        <p>You can also customize a specific tag that will only have this design applied to it. In the following example, all paragraphs/topics that use the name and the suffix class="center" will have center alignment applied.</p>  
+        <p>Do not start the name when using class with a number because it is only supported by Internet Explorer.</p>  
+    </div>  
+    <footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer>
+</body>  
+</html>

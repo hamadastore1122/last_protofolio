@@ -1,0 +1,12 @@
+*{
+    h1{
+        color: red;
+    }
+}
+.container{
+    height: 150vh;
+}
+.title{
+    color: green;
+    font-size: 40px;
+}

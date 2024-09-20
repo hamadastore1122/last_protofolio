@@ -1,0 +1,149 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="styles.css">  
+    <title>Tables</title>
+    <style>
+        body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f4f4f4;  
+    margin: 0;  
+    padding: 20px;  
+}  
+
+.container {  
+    max-width: 70%;  
+    margin: auto;  
+    background: white;  
+    padding: 20px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}  
+
+h1, h2, h3 {  
+    color: #333;  
+}  
+
+p {  
+    color: #555;  
+    line-height: 1.6;  
+}  
+
+pre {  
+    background-color: #f9f9f9;  
+    border: 1px solid #ddd;  
+    padding: 10px;  
+    overflow: auto;  
+}  
+
+code {  
+    font-family: 'Courier New', Courier, monospace;  
+}  
+
+table {  
+    width: 100%;  
+    border-collapse: collapse;  
+    margin: 20px 0;  
+}  
+
+td, th {  
+    border: 1px solid #ddd;  
+    padding: 8px;  
+    text-align: left;  
+}  
+
+th {  
+    background-color: #f2f2f2;  
+}
+    </style>  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>Tables</h1>  
+        <table>  
+            <tr>  
+                <td>44%</td>  
+                <td>Apple</td>  
+            </tr>  
+            <tr>  
+                <td>38%</td>  
+                <td>Banana</td>  
+            </tr>  
+            <tr>  
+                <td>13%</td>  
+                <td>Orange</td>  
+            </tr>  
+        </table>  
+
+        <h2>Tables</h2>  
+        <p>Tables are defined by the <code>&lt;table&gt;</code> tag. The table is divided into horizontal rows (using the <code>&lt;tr&gt;</code> tag) and each row contains cells that contain data (using the <code>&lt;td&gt;</code> tag). The <code>&lt;td&gt;</code> tag stands for table data, which holds the data content in the cell. The <code>&lt;td&gt;</code> cell can contain text, links, images, lists, forms, and other tables.</p>  
+
+        <h3>Example of a table</h3>  
+        <pre><code>&lt;table dir="rtl" border="1"&gt;  
+&lt;tr&gt;  
+&lt;td&gt;Row 1, Cell 1&lt;/td&gt;  
+&lt;td&gt;Row 1, Cell 2&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;td&gt;Row 2, Cell 1&lt;/td&gt;  
+&lt;td&gt;Row 2, Cell 2&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;/table&gt;</code></pre>  
+        <p>The table will appear in the browser as follows:</p>  
+        <table>  
+            <tr>  
+                <td>Row 1, Cell 2</td>  
+                <td>Row 1, Cell 1</td>  
+            </tr>  
+            <tr>  
+                <td>Row 2, Cell 2</td>  
+                <td>Row 2, Cell 1</td>  
+            </tr>  
+        </table>  
+        <p><strong>Note:</strong> As long as we are using the Arabic language, we can always use the right-to-left direction suffix <code>dir="rtl"</code> in HTML or through the direction property direction: rtl; in CSS.</p>  
+
+        <h2>Table and suffix borders</h2>  
+        <p>If you do not specify the border extension, the table will appear without borders. Sometimes not specifying a border is useful, but be careful as most of the time we want to show the table borders. To display the table borders, only put the border extension with the value you want the border thickness to be.</p>  
+        <pre><code>&lt;table border="1"&gt;  
+&lt;tr&gt;  
+&lt;td&gt;Row 1, Cell 1&lt;/td&gt;  
+&lt;td&gt;Row 1, Cell 2&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;/table&gt;</code></pre>  
+
+        <h2>Table header</h2>  
+        <p>The table header, i.e., the column headings, is specified by the <code>&lt;th&gt;</code> tag, and all browsers display the text inside the <code>&lt;th&gt;</code> tag as bold text and centered.</p>  
+        <pre><code>&lt;table border="1"&gt;  
+&lt;tr&gt;  
+&lt;th&gt;Name&lt;/th&gt;  
+&lt;th&gt;Age&lt;/th&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;td&gt;Mohammed&lt;/td&gt;  
+&lt;td&gt;13&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;td&gt;Samer&lt;/td&gt;  
+&lt;td&gt;33&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;/table&gt;</code></pre>  
+        <p>The previous code will appear as follows:</p>  
+        <table>  
+            <tr>  
+                <th>the age</th>  
+                <th>the name</th>  
+            </tr>  
+            <tr>  
+                <td>13</td>  
+                <td>Mohammed</td>  
+            </tr>  
+            <tr>  
+                <td>33</td>  
+                <td>Samer</td>  
+            </tr>  
+        </table>  
+    </div>  
+</body>  
+</html>

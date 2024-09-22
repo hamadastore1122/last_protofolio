@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap texts</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+ .container { 
+   
+   height: 270vh;
+   width:70%;  
+   margin: auto; 
+   background: white;  
+   padding: 20px;  
+   border-radius: 8px;  
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+   padding-bottom: 50px;
+   margin-top:50px ;
+   margin-bottom:50px ;
+
+}
+table{
+    padding-top: 50px;
+}
+h1{
+    text-align: center;
+    color: brown;
+}
+
+footer{
+    background-color: rgb(10, 10, 49);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    
+
+}
+ 
+
+.alert {  
+    background-color: #e2e3e5;  
+    border-color: #d6d8db;  
+}  
+
+mark {  
+    background-color: #ffeeba;  
+    color: #856404;  
+}
+
+footer h2{
+    color: blanchedalmond;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+   
+}
+
+footer h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+
+}
+
+footer h3 span{
+    color: red;
+}
+
+footer .footer{
+    padding-top: 200px;
+}
+ 
+
+</style>
+</head>
+<body>
+    <h1>Bootstrap Text/Typograpy</h1> 
+    <div  class="container">
+        <h1>Bootstrap's Default Settings</h1>  
+        <p>Bootstrap's global default font-size is 14px, with a line-height of 1.428.</p>  
+        <p>This is applied to the <code>&lt;body&gt;</code> element and all paragraphs (<code>&lt;p&gt;</code>).</p>  
+        <p>In addition, all <code>&lt;span&gt;</code> elements have a bottom margin that equals half their computed line-height (10px by default).</p>  
+    
+        <h2>Bootstrap vs. Browser Defaults</h2>  
+        <p>In this chapter, we will look at some HTML elements that will be styled a little bit differently by Bootstrap than browser defaults.</p>  
+    
+        <h1>h1 - h6</h1>  
+        <p>By default, Bootstrap will style the HTML headings (<code>h1</code> to <code>h6</code>) in the following way:</p>  
+    
+        <div class="alert alert-light">  
+            <h1>h1 Bootstrap heading (36px)</h1>  
+            <h2>h2 Bootstrap heading (30px)</h2>  
+            <h3>h3 Bootstrap heading (24px)</h3>  
+            <h4>h4 Bootstrap heading (18px)</h4>  
+            <h5>h5 Bootstrap heading (14px)</h5>  
+            <h6>h6 Bootstrap heading (12px)</h6>  
+        </div>  
+    
+        <h2>&lt;small&gt;</h2>  
+        <p>In Bootstrap the HTML <code>&lt;small&gt;</code> element is used to create a lighter, secondary text in any heading:</p>  
+    
+        <div class="alert alert-light">  
+            <h1>h1 heading <small>secondary text</small></h1>  
+            <h2>h2 heading <small>secondary text</small></h2>  
+            <h3>h3 heading <small>secondary text</small></h3>  
+            <h4>h4 heading <small>secondary text</small></h4>  
+            <h5>h5 heading <small>secondary text</small></h5>  
+            <h6>h6 heading <small>secondary text</small></h6>  
+        </div>  
+    
+        <h2>&lt;mark&gt;</h2>  
+        <p>Bootstrap will style the HTML <code>&lt;mark&gt;</code> element in the following way:</p>  
+    
+        <div class="alert alert-light">  
+            <p>Use the mark element to <mark>highlight text</mark>.</p>  
+        </div>  
+    
+        <h2>&lt;abbr&gt;</h2>  
+        <p>Bootstrap will style the HTML <code>&lt;abbr&gt;</code> element in the following way:</p>  
+    
+        <div class="alert alert-light">  
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>  
+        </div>  
+    
+        <h2>&lt;blockquote&gt;</h2>  
+        <p>Bootstrap will style the HTML <code>&lt;blockquote&gt;</code> element in the following way:</p>  
+    
+        <div class="alert alert-light">  
+            <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>  
+           
+        </div> 
+        <h1>HTML Elements in Bootstrap</h1>  
+
+        <h2>&lt;dl&gt;</h2>  
+        <p>Bootstrap will style the HTML <code>&lt;dl&gt;</code> element as follows:</p>  
+        <div class="alert alert-light">  
+            <strong>Example</strong>  
+            <dl>  
+                <dt>Coffee</dt>  
+                <dd>- black hot drink</dd>  
+                <dt>Milk</dt>  
+                <dd>- white cold drink</dd>  
+            </dl>  
+        </div>  
+    
+        <h2>&lt;code&gt;</h2>  
+        <p>Bootstrap will style the HTML <code>&lt;code&gt;</code> element as follows:</p>  
+        <div class="alert alert-light">  
+            <strong>Example</strong>  
+            <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> define sections in a document.</p>  
+        </div>  
+    
+        <h2>&lt;kbd&gt;</h2>  
+        <p>Bootstrap will style the HTML <code>&lt;kbd&gt;</code> element as follows:</p>  
+        <div class="alert alert-light">  
+            <strong>Example</strong>  
+            <p>Use <kbd>Ctrl + P</kbd> to open the print dialog.</p>  
+        </div>  
+    
+        <h2>&lt;pre&gt;</h2>  
+        <p>Bootstrap will style the HTML <code>&lt;pre&gt;</code> element as follows:</p>  
+        <div class="alert alert-light">  
+            <strong>Example</strong>  
+            <pre>  
+    Text in a pre element  
+    is displayed in a monospaced font,  
+    and preserves both  
+    spaces  
+    and line breaks.  
+            </pre>  
+        </div>  
+    
+        <h2>Colors and Contexts</h2>  
+        <p>Bootstrap also includes contextual classes for providing "meaning through color".</p>  
+    
+        <h3>Text Color Classes:</h3>  
+        <div class="alert alert-light">  
+            <strong>Example</strong>  
+            <p>This text is muted.</p>  
+            <p class="text-primary">This text is important.</p>  
+            <p class="text-success">This text indicates success.</p>  
+            <p class="text-info">This text is some information.</p>  
+            <p class="text-warning">This text signifies a warning.</p>  
+            <p class="text-danger">This text signifies danger.</p>  
+        </div>  
+    
+        <h3>Background Color Classes:</h3>  
+        <div class="alert alert-light">  
+            <strong>Example</strong>  
+            <p class="bg-primary text-white">This text is important.</p>  
+            <p class="bg-success text-white">This text indicates success.</p>  
+            <p class="bg-info text-white">This text is some information.</p>  
+            <p class="bg-warning text-dark">This text signifies a warning.</p>  
+            <p class="bg-danger text-white">This text signifies danger.</p>  
+        </div> 
+        <table class="table">  
+            <thead>  
+                <tr>  
+                    <th>Class</th>  
+                    <th>Description</th>  
+                    <th>Example</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>.lead</td>  
+                    <td>Makes a paragraph stand out</td>  
+                    <td><p class="lead">This is a lead paragraph.</p></td>  
+                </tr>  
+                <tr>  
+                    <td>.small</td>  
+                    <td>Indicates smaller text (set to 85% of the size of the parent)</td>  
+                    <td><p class="small">This is small text.</p></td>  
+                </tr>  
+                <tr>  
+                    <td>.text-left</td>  
+                    <td>Indicates left-aligned text</td>  
+                    <td><p class="text-left">Left aligned text.</p></td>  
+                </tr>  
+                <tr>  
+                    <td>.text-center</td>  
+                    <td>Indicates center-aligned text</td>  
+                    <td><p class="text-center">Center aligned text.</p></td>  
+                </tr>  
+                <tr>  
+                    <td>.text-right</td>  
+                    <td>Indicates right-aligned text</td>  
+                    <td><p class="text-right">Right aligned text.</p></td>  
+                </tr>  
+                <tr>  
+                    <td>.text-justify</td>  
+                    <td>Indicates justified text</td>  
+                    <td><p class="text-justify">Justified text.</p></td>  
+                </tr>  
+                <tr>  
+                    <td>.text-nowrap</td>  
+                    <td>Indicates no wrap text</td>  
+                    <td><p class="text-nowrap">No wrap text.</p></td>  
+                </tr>  
+                <tr>  
+                    <td>.text-lowercase</td>  
+                    <td>Indicates lowercased text</td>  
+                    <td><p class="text-lowercase">LOWERCASE TEXT.</p></td>  
+                </tr>  
+                <tr>  
+                    <td>.text-uppercase</td>  
+                    <td>Indicates uppercased text</td>  
+                    <td><p class="text-uppercase">uppercase text.</p></td>  
+                </tr>  
+                <tr>  
+                    <td>.text-capitalize</td>  
+                    <td>Indicates capitalized text</td>  
+                    <td><p class="text-capitalize">capitalize text.</p></td>  
+                </tr>  
+                <tr>  
+                    <td>.initialism</td>  
+                    <td>Displays the text inside an <code>abbr</code> element in a slightly smaller font size</td>  
+                    <td><p class="initialism">HTML</p></td>  
+                </tr>  
+                <tr>  
+                    <td>.list-unstyled</td>  
+                    <td>Removes the default list-style and left margin on list items</td>  
+                    <td>  
+                        <ul class="list-unstyled">  
+                            <li>Item 1</li>  
+                            <li>Item 2</li>  
+                        </ul>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>.list-inline</td>  
+                    <td>Places all list items on a single line</td>  
+                    <td>  
+                        <ul class="list-inline">  
+                            <li class="list-inline-item">Item 1</li>  
+                            <li class="list-inline-item">Item 2</li>  
+                        </ul>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>.dl-horizontal</td>  
+                    <td>Lines up the terms (<code>dt</code>) and descriptions (<code>dd</code>) in <code>dl</code> elements side-by-side</td>  
+                    <td>  
+                        <dl class="dl-horizontal">  
+                            <dt>Term 1</dt>  
+                            <dd>Description 1</dd>  
+                        </dl>  
+                    </td>  
+                </tr>  
+                <tr>  
+                    <td>.pre-scrollable</td>  
+                    <td>Makes a <code>&lt;pre&gt;</code> element scrollable</td>  
+                    <td>  
+                        <pre class="pre-scrollable">This is a long text that will be scrollable if it exceeds the height of the container.</pre>  
+                    </td>  
+                </tr>  
+            </tbody>  
+        </table> 
+    </div>  
+    
+   
+    </body>  
+    </html>  
+    
+ 
+    </div>
+
+
+    
+    <footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer>
+</body>
+</html>

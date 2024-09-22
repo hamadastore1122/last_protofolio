@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <title>bootstrap Grids</title>
+    <style>
+        h1, h2 {  
+    color: #343a40;  
+}  
+
+.alert {  
+    background-color: #e2e3e5;  
+    border-color: #d6d8db;  
+}  
+
+.table {  
+    margin-top: 20px;  
+}
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+ .container { 
+   
+   height: 170vh;
+   width:70%;  
+   margin: auto; 
+   background: white;  
+   padding: 20px;  
+   border-radius: 8px;  
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+   padding-bottom: 50px;
+   margin-top:50px ;
+   margin-bottom:50px ;
+}
+h1{
+    text-align: center;
+    color: brown;
+}
+
+footer{
+    background-color: rgb(10, 10, 49);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+footer h2{
+    color: blanchedalmond;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+   
+}
+
+footer h3{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 15px;
+
+}
+
+footer h3 span{
+    color: red;
+}
+
+footer .footer{
+    padding-top: 200px;
+}
+ 
+
+</style>
+</head>
+<body>
+    <h1>Bootstrap Grids System</h1> 
+    <div  class="container"> 
+    <p>Bootstrap's grid system allows up to 12 columns across the page.</p>  
+    <p>If you do not want to use all 12 columns individually, you can group the columns together to create wider columns:</p>  
+    
+    <div class="row">  
+        <div class="col">span 1</div>  
+        <div class="col">span 1</div>  
+        <div class="col">span 1</div>  
+        <div class="col">span 1</div>  
+        <div class="col">span 1</div>  
+        <div class="col">span 1</div>  
+        <div class="col">span 1</div>  
+        <div class="col">span 1</div>  
+        <div class="col">span 1</div>  
+        <div class="col">span 1</div>  
+        <div class="col">span 1</div>  
+        <div class="col">span 1</div>  
+    </div>  
+    
+    <div class="row">  
+        <div class="col-4">span 4</div>  
+        <div class="col-4">span 4</div>  
+        <div class="col-4">span 4</div>  
+    </div>  
+    
+    <div class="row">  
+        <div class="col-6">span 6</div>  
+        <div class="col-6">span 6</div>  
+    </div>  
+    
+    <div class="alert alert-warning mt-3">  
+        <strong>Tip:</strong> Remember that grid columns should add up to twelve for a row. More than that, columns will stack to maintain the viewport.  
+    </div>  
+
+    <h2>Grid Classes</h2>  
+    <p>The Bootstrap grid system has four classes:</p>  
+    <ul>  
+        <li><code>.col-xs-*</code> (for phones - screens less than 768px wide)</li>  
+        <li><code>.col-sm-*</code> (for tablets - screens equal to or greater than 768px wide)</li>  
+        <li><code>.col-md-*</code> (for small laptops - screens equal to or greater than 992px wide)</li>  
+        <li><code>.col-lg-*</code> (for laptops and desktops - screens equal to or greater than 1200px wide)</li>  
+    </ul>  
+
+    <h2>Basic Structure of a Bootstrap Grid</h2>  
+    <p>The following is a basic structure of a Bootstrap grid:</p>  
+    <pre>  
+<code>  
+&lt;div class="container"&gt;  
+    &lt;div class="row"&gt;  
+        &lt;div class="col"&gt;&lt;/div&gt;  
+        &lt;div class="col"&gt;&lt;/div&gt;  
+    &lt;/div&gt;  
+    &lt;div class="row"&gt;  
+        &lt;div class="col"&gt;&lt;/div&gt;  
+        &lt;div class="col"&gt;&lt;/div&gt;  
+    &lt;/div&gt;  
+&lt;/div&gt;  
+</code>  
+    </pre>  
+
+    <h2>Grid Options</h2>  
+    <table class="table">  
+        <thead>  
+            <tr>  
+                <th>Class prefix</th>  
+                <th>Suitable for</th>  
+                <th>Grid behaviour</th>  
+                <th>Container width</th>  
+                <th># of columns</th>  
+            </tr>  
+        </thead>  
+        <tbody>  
+            <tr>  
+                <td><code>.col-xs-*</code></td>  
+                <td>Phones</td>  
+                <td>Horizontal at all times</td>  
+                <td>None (auto)</td>  
+                <td>12</td>  
+            </tr>  
+            <tr>  
+                <td><code>.col-sm-*</code></td>  
+                <td>Tablets</td>  
+                <td>Collapsed to start, horizontal above breakpoints</td>  
+                <td>750px</td>  
+                <td>12</td>  
+            </tr>  
+            <tr>  
+                <td><code>.col-md-*</code></td>  
+                <td>Small Laptops</td>  
+                <td>Collapsed to start, horizontal above breakpoints</td>  
+                <td>970px</td>  
+                <td>12</td>  
+            </tr>  
+            <tr>  
+                <td><code>.col-lg-*</code></td>  
+                <td>Laptops & Desktops</td>  
+                <td>Collapsed to start, horizontal above breakpoints</td>  
+                <td>1170px</td>  
+                <td>12</td>  
+            </tr>  
+        </tbody>  
+    </table>  
+
+    <h2>Examples</h2>  
+    <p>The next chapters show examples of grid systems for different devices:</p>  
+    <ul>  
+        <li>Stacked-to-horizontal</li>  
+        <li>Small devices</li>  
+        <li>Medium devices</li>  
+        <li>Large devices</li>  
+        <li>More grid examples</li>  
+    </ul>  
+
+    <div class="alert alert-info mt-3">  
+        <strong>Did You Know?</strong> W3.CSS is an excellent alternative to Bootstrap.  
+    </div>
+    
+
+    </div>
+
+
+    
+    <footer>
+        <div class="footer">
+            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
+        </div>
+
+    </footer>
+</body>
+</html>

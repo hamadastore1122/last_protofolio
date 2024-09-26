@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Bootstrap 5 Navbars</title>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file --> 
     <style>
         *{
             padding: 0;
@@ -13,7 +15,7 @@
 
  .container { 
    
-   height: 110vh;
+   height: auto;
    width:70%;  
    margin: auto; 
    background: white;  
@@ -60,25 +62,130 @@ footer h3 span{
 footer .footer{
     padding-top: 200px;
 }
- 
+h1, h2 {  
+    margin-top: 20px;  
+}  
+
+pre {  
+    background-color: #e9ecef;  
+    padding: 10px;  
+    border-radius: 5px;  
+} 
 
 </style>
-</head>
-<body>
-    <h1>Bootstrap Navbars </h1>  
-    <div  class="container">
-   
 
+
+ 
+</head>  
+<body>  
+
+<div class="container mt-5">  
+    <h1>Bootstrap 5 Navbars</h1>  
+    <h2>Navigation Bars</h2>  
+    <p>A navigation bar is a navigation header that is placed at the top of the page:</p>  
+    <nav class="navbar navbar-expand-sm bg-light">  
+      <br> 
+        <div class="collapse navbar-collapse">  
+            
+            <form class="d-flex ms-auto">  
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">  
+                <button class="btn btn-outline-success" type="submit">Search</button>  
+            </form>  
+        </div>  
+    </nav>  
+
+    <h2>Basic Navbar</h2>  
+    <p>With Bootstrap, a navigation bar can extend or collapse, depending on the screen size:</p>  
+    <p>To add links inside the navbar, use either an <code>&lt;ul&gt;</code> element with class <code>navbar-nav</code>. Then add <code>&lt;li&gt;</code> elements with a <code>nav-item</code> class followed by an <code>&lt;a&gt;</code> element with a <code>nav-link</code> class:</p>  
+    <pre><code>&lt;ul class="navbar-nav"&gt;  
+    &lt;li class="nav-item"&gt;  
+        &lt;a class="nav-link" href="#"&gt;Link 1&lt;/a&gt;  
+    &lt;/li&gt;  
+    &lt;li class="nav-item"&gt;  
+        &lt;a class="nav-link" href="#"&gt;Link 2&lt;/a&gt;  
+    &lt;/li&gt;  
+    &lt;li class="nav-item"&gt;  
+        &lt;a class="nav-link" href="#"&gt;Link 3&lt;/a&gt;  
+    &lt;/li&gt;  
+&lt;/ul&gt;</code></pre>  
+
+    <h2>Vertical Navbar</h2>  
+    <p>Remove the <code>.navbar-expand-*</code> class to create a navigation bar that will always be vertical:</p>  
+    <pre><code>&lt;nav class="navbar bg-light"&gt;  
+    ...  
+&lt;/nav&gt;</code></pre>  
+
+<h1>Centered Navbar</h1>  
+    <p>Add the <code>.justify-content-center</code> class to center the navigation bar:</p>  
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">  
+          
+    </nav>  
+
+    <h2>Example</h2>  
+    <pre><code>&lt;nav class="navbar navbar-expand-sm bg-light justify-content-center"&gt;  
+    ...  
+&lt;/nav&gt;</code></pre>  
+
+    <h1>Colored Navbar</h1>  
+    <p>Use any of the <code>.bg-color</code> classes to change the background color of the navbar:</p>  
+    <div class="bg-light p-2">  
+        <span class="badge bg-primary">Active</span>  
+        <span class="badge bg-secondary">Link</span>  
+        <span class="badge bg-light">Disabled</span>  
+    </div>  
+
+    <h2>Example</h2>  
+    <pre><code>&lt;nav class="navbar navbar-expand-sm bg-light navbar-light"&gt;  
+    ...  
+&lt;/nav&gt;</code></pre>  
+
+    <h1>Brand / Logo</h1>  
+    <p>The <code>.navbar-brand</code> class is used to highlight the brand/logo/project name of your page:</p>  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">  
+    </nav>  
+
+    <h2>Example</h2>  
+    <pre><code>&lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;  
+    &lt;a class="navbar-brand" href="#"&gt;Logo&lt;/a&gt;  
+&lt;/nav&gt;</code></pre> 
+<h1>Example</h1>  
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">  
+    <div class="container-fluid">  
+        <a class="navbar-brand" href="#">  
+      
+        </a>  
+    </div>  
+</nav>  
+
+<h2>Navbar Text</h2>  
+<p>Use the <code>.navbar-text</code> class to vertical align any elements inside the navbar that are not links (ensures proper padding and text color).</p>  
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">  
+    <div class="container-fluid">  
+        <span class="navbar-text">Navbar text</span>  
+    </div>  
+</nav>  
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">  
+    <div class="container-fluid">  
+
+        </button>  
+      
+    </div>  
+</nav>  
+
+<p class="text-muted">Tip: You can also remove the <code>.navbar-expand-md</code> class to ALWAYS hide navbar links and display the toggler button.</p>  
+</div>  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>  
+<footer>
+    <div class="footer">
+        <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+    <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
     </div>
 
-
-    
-    <footer>
-        <div class="footer">
-            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
-        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
-        </div>
-
-    </footer>
-</body>
+</footer>
+</body>  
 </html>

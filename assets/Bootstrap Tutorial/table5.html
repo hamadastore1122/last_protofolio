@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Bootstrap 5 Tables</title>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="styles.css"> <!-- رابط لملف CSS -->
     <style>
         *{
             padding: 0;
@@ -13,7 +15,7 @@
 
  .container { 
    
-   height: 110vh;
+   height: auto;
    width:70%;  
    margin: auto; 
    background: white;  
@@ -63,22 +65,475 @@ footer .footer{
  
 
 </style>
-</head>
-<body>
-    <h1> Bootstrap Tables</h1>  
-    <div  class="container">
-    
 
+  
+</head>  
+<body>  
+
+<div class="container mt-5">  
+    <h1>Bootstrap 5 Tables</h1>  
+
+    <h2>Basic Table</h2>  
+    <p>A basic Bootstrap 5 table has a light padding and horizontal dividers.</p>  
+    <p>The <code>.table</code> class adds basic styling to a table:</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table">  
+            <thead>  
+                <tr>  
+                    <th>Firstname</th>  
+                    <th>Lastname</th>  
+                    <th>Email</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>John</td>  
+                    <td>Doe</td>  
+                    <td>john@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>Mary</td>  
+                    <td>Moe</td>  
+                    <td>mary@example.com</td>  
+                </tr>  
+               
+            </tbody>  
+        </table>  
+    </div>  
+
+    <h2>Striped Rows</h2>  
+    <p>The <code>.table-striped</code> class adds zebra-stripes to a table:</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table table-striped">  
+            <thead>  
+                <tr>  
+                    <th>Firstname</th>  
+                    <th>Lastname</th>  
+                    <th>Email</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>John</td>  
+                    <td>Doe</td>  
+                    <td>john@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>Mary</td>  
+                    <td>Moe</td>  
+                    <td>mary@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>July</td>  
+                    <td>Dooley</td>  
+                    <td>july@example.com</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>  
+
+    <h2>Bordered Table</h2>  
+    <p>The <code>.table-bordered</code> class adds borders on all sides of the table and cells:</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table table-bordered">  
+            <thead>  
+                <tr>  
+                    <th>Firstname</th>  
+                    <th>Lastname</th>  
+                    <th>Email</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>John</td>  
+                    <td>Doe</td>  
+                    <td>john@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>Mary</td>  
+                    <td>Moe</td>  
+                    <td>mary@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>July</td>  
+                    <td>Dooley</td>  
+                    <td>july@example.com</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>  
+
+    <h2>Hover Rows</h2>  
+    <p>The <code>.table-hover</code> class adds a hover effect (grey background color) on table rows:</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table table-hover">  
+            <thead>  
+                <tr>  
+                    <th>Firstname</th>  
+                    <th>Lastname</th>  
+                    <th>Email</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>John</td>  
+                    <td>Doe</td>  
+                    <td>john@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>Mary</td>  
+                    <td>Moe</td>  
+                    <td>mary@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>July</td>  
+                    <td>Dooley</td>  
+                    <td>july@example.com</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div> 
+    <h1>Black/Dark Table</h1>  
+    <p>The <code>.table-dark</code> class adds a black background to the table:</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table table-dark">  
+            <thead>  
+                <tr>  
+                    <th>Firstname</th>  
+                    <th>Lastname</th>  
+                    <th>Email</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>John</td>  
+                    <td>Doe</td>  
+                    <td>john@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>Mary</td>  
+                    <td>Moe</td>  
+                    <td>mary@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>July</td>  
+                    <td>Dooley</td>  
+                    <td>july@example.com</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>  
+
+    <h1>Dark Striped Table</h1>  
+    <p>Combine <code>.table-dark</code> and <code>.table-striped</code> to create a dark, striped table:</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table table-dark table-striped">  
+            <thead>  
+                <tr>  
+                    <th>Firstname</th>  
+                    <th>Lastname</th>  
+                    <th>Email</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>John</td>  
+                    <td>Doe</td>  
+                    <td>john@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>Mary</td>  
+                    <td>Moe</td>  
+                    <td>mary@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>July</td>  
+                    <td>Dooley</td>  
+                    <td>july@example.com</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>  
+
+    <h1>Hoverable Dark Table</h1>  
+    <p>The <code>.table-hover</code> class adds a hover effect (grey background color) on table rows:</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table table-dark table-hover">  
+            <thead>  
+                <tr>  
+                    <th>Firstname</th>  
+                    <th>Lastname</th>  
+                    <th>Email</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>John</td>  
+                    <td>Doe</td>  
+                    <td>john@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>Mary</td>  
+                    <td>Moe</td>  
+                    <td>mary@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>July</td>  
+                    <td>Dooley</td>  
+                    <td>july@example.com</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>  
+
+    <h1>Borderless Table</h1>  
+    <p>The <code>.table-borderless</code> class removes borders from the table:</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table table-dark table-borderless">  
+            <thead>  
+                <tr>  
+                    <th>Firstname</th>  
+                    <th>Lastname</th>  
+                    <th>Email</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>John</td>  
+                    <td>Doe</td>  
+                    <td>john@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>Mary</td>  
+                    <td>Moe</td>  
+                    <td>mary@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>July</td>  
+                    <td>Dooley</td>  
+                    <td>july@example.com</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>  
+    <h1>Contextual Classes</h1>  
+    <p> You can also use any of the contextual classes to add a background color just to the table header:(<code>&lt;table&gt;</code>)، or table rows   (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>).</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table">  
+            <thead>  
+                <tr>  
+                    <th>Firstname</th>  
+                    <th>Lastname</th>  
+                    <th>Email</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr class="table-default">  
+                    <td>Default</td>  
+                    <td>Defaultson</td>  
+                    <td>def@somemail.com</td>  
+                </tr>  
+                <tr class="table-primary">  
+                    <td>Joe</td>  
+                    <td>Doe</td>  
+                    <td>joe@example.com</td>  
+                </tr>  
+                <tr class="table-success">  
+                    <td>Doe</td>  
+                    <td>John</td>  
+                    <td>john@example.com</td>  
+                </tr>  
+                <tr class="table-danger">  
+                    <td>Moe</td>  
+                    <td>Mary</td>  
+                    <td>mary@example.com</td>  
+                </tr>  
+                <tr class="table-info">  
+                    <td>Dooley</td>  
+                    <td>July</td>  
+                    <td>july@example.com</td>  
+                </tr>  
+              
+             
+                
+                
+            </tbody>  
+        </table>  
+    </div>  
+
+    <h3>Table Head Colors</h3>  
+    <p>يمكنك أيضًا استخدام أي من الفئات السياقية لإضافة لون خلفية فقط إلى رأس الجدول:</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table">  
+            <thead class="table-success">  
+                <tr>  
+                    <th>Firstname</th>  
+                    <th>Lastname</th>  
+                    <th>Email</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>John</td>  
+                    <td>Doe</td>  
+                    <td>john@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>Mary</td>  
+                    <td>Moe</td>  
+                    <td>mary@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>July</td>  
+                    <td>Dooley</td>  
+                    <td>july@example.com</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>  
+
+    <h3>Small Table</h3>  
+    <p>تجعل فئة <code>.table-sm</code> الجدول أصغر عن طريق تقليل حشو الخلايا إلى النصف:</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table table-sm">  
+            <thead>  
+                <tr>  
+                    <th>Firstname</th>  
+                    <th>Lastname</th>  
+                    <th>Email</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>John</td>  
+                    <td>Doe</td>  
+                    <td>john@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>Mary</td>  
+                    <td>Moe</td>  
+                    <td>mary@example.com</td>  
+                </tr>  
+                <tr>  
+                    <td>July</td>  
+                    <td>Dooley</td>  
+                    <td>july@example.com</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>
+    <h1>Responsive Tables</h1>  
+    <p>Add the class <code>.table-responsive</code> to create a responsive table that adds a scrollbar when the table is too wide horizontally:</p>  
+    
+    <h3>Example</h3>  
+    <div class="table-responsive">  
+        <table class="table">  
+            <thead>  
+                <tr>  
+                    <th>#</th>  
+                    <th>First Name</th>  
+                    <th>Last Name</th>  
+                    <th>Age</th>  
+                    <th>City</th>  
+                    <th>Country</th>  
+                    <th>Gender</th>  
+                    <th>Example 1</th>  
+                    <th>Example 2</th>  
+                    <th>Example 3</th>  
+                    <th>Example 4</th>  
+                    <th>Example 5</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>1</td>  
+                    <td>Anna</td>  
+                    <td>Smith</td>  
+                    <td>35</td>  
+                    <td>New York</td>  
+                    <td>USA</td>  
+                    <td>Female</td>  
+                    <td>Yes</td>  
+                    <td>Yes</td>  
+                    <td>Yes</td>  
+                    <td>Yes</td>  
+                    <td>Yes</td>  
+                </tr>  
+                <!-- You can add more rows here -->  
+            </tbody>  
+        </table>  
+    </div>  
+
+    <h3>You can also specify when to show the scrollbar based on the screen width:</h3>  
+    <ul>  
+        <li><code>.table-responsive-sm</code> - for screens less than 576px</li>  
+        <li><code>.table-responsive-md</code> - for screens less than 768px</li>  
+        <li><code>.table-responsive-lg</code> - for screens less than 992px</li>  
+    
+    </ul>  
+
+    <h3>Another Example</h3>  
+    <div class="table-responsive-sm">  
+        <table class="table">  
+            <thead>  
+                <tr>  
+                    <th>#</th>  
+                    <th>First Name</th>  
+                    <th>Last Name</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>1</td>  
+                    <td>Ali</td>  
+                    <td>Mohammed</td>  
+                </tr>  
+                <tr>  
+                    <td>2</td>  
+                    <td>Fatima</td>  
+                    <td>Ali</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </div>  
+
+    <h3>Did you know?</h3>  
+    <p>W3.CSS is a great alternative to Bootstrap 5.</p>  
+    <p>W3.CSS is smaller, faster, and easier to use.</p>  
+ 
+</div>  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<footer>
+    <div class="footer">
+        <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+    <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
     </div>
 
-
-    
-    <footer>
-        <div class="footer">
-            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
-        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
-        </div>
-
-    </footer>
-</body>
+</footer>  
+</body>  
 </html>

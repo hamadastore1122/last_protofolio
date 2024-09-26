@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Bootstrap 5 Alerts</title>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->  
     <style>
         *{
             padding: 0;
@@ -13,7 +15,7 @@
 
  .container { 
    
-   height: 110vh;
+   height: auto;
    width:70%;  
    margin: auto; 
    background: white;  
@@ -63,22 +65,63 @@ footer .footer{
  
 
 </style>
-</head>
-<body>
-    <h1>Bootstrap Alets</h1>  
-    <div  class="container">
+
+
+
+</head>  
+<body>  
+
+<div class="container mt-5">  
+    <h1>Bootstrap 5 Alerts</h1>  
+    <p>Bootstrap 5 provides an easy way to create predefined alert messages:</p>  
+
+    <div class="alert alert-success" role="alert">  
+        <strong>Success!</strong> This alert box could indicate a successful or positive action.  
+    </div>  
+    <div class="alert alert-info" role="alert">  
+        <strong>Info!</strong> This alert box could indicate a neutral informative change or action.  
+    </div>  
+    <div class="alert alert-warning" role="alert">  
+        <strong>Warning!</strong> This alert box could indicate a warning that might need attention.  
+    </div>  
+    <div class="alert alert-danger" role="alert">  
+        <strong>Danger!</strong> This alert box could indicate a dangerous or potentially harmful action.  
+    </div>  
+
+    <h3>Example</h3>  
+    <pre><code>&lt;div class="alert alert-success"&gt;  
+    &lt;strong&gt;Success!&lt;/strong&gt; This alert box could indicate a successful or positive action.  
+&lt;/div&gt;</code></pre>  
+
+  
+  
+    
      
 
+    <h3>Closing Alerts</h3>  
+    <div class="alert alert-success alert-dismissible fade show" role="alert">  
+        <strong>Success!</strong> This alert box could indicate a successful or positive action.  
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>  
+    </div>  
+
+    <h3>Example</h3>  
+    <pre><code>&lt;div class="alert alert-success alert-dismissible"&gt;  
+    &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt;&lt;/button&gt;  
+    &lt;strong&gt;Success!&lt;/strong&gt; This alert box could indicate a successful or positive action.  
+&lt;/div&gt;</code></pre>  
+</div>  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+<footer>
+    <div class="footer">
+        <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
+    <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
     </div>
 
+</footer>
 
-    
-    <footer>
-        <div class="footer">
-            <h2>Copyright @ 2024 MasterCode, All Rights Reserved</h2>
-        <h3>Desiigned by Mo7ammed <span>ya7ya</span></h3>
-        </div>
-
-    </footer>
-</body>
+</body>  
 </html>
